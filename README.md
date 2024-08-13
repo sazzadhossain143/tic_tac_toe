@@ -1,1 +1,2 @@
-# tic_tac_toe
+# tic_tac_toe <br>
+javaScript DOM practice project
