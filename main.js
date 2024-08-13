@@ -63,6 +63,7 @@ boxes.forEach((box) => {
 const gameDraw = () => {
   msg.innerText = `Game was a Draw.`;
   msgContainer.classList.remove("hide");
+  msg.style.color = 'black';
   disableBoxes();
 };
 
@@ -83,8 +84,8 @@ const showWinner = (winner) => {
   msg.innerText = `Winner is  ${winner}`;
   msgContainer.classList.remove("hide");
   disableBoxes();
-  if (winner == "X") x += 1;
-  else if (winner == "O") o += 1;
+  if (winner == "X") {x += 1; msg.style.color = 'green';}
+  else if (winner == "O") {o += 1; msg.style.color = 'red';}
   xScore.innerText = x;
   oScore.innerText = o;
 };
