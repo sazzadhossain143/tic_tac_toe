@@ -61,7 +61,7 @@
   
   #msg {
     color: #680808;
-    font-size: 5vmin;
+    font-size: 8vmin;
     font-weight: bold;
   }
   
@@ -98,4 +98,17 @@
     background: rgb(149, 216, 207);
     padding: 10px;
     border-radius: 8px;
+  }
+
+  .headline h1{
+    font-size: 5vmin;
+  }
+  @media (max-width: 576px){
+    .game{
+      width: 80vmin;
+    }
+    .box{
+      height: 20vmin;
+      width: 20vmin;
+    }
   }
